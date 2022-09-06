@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import styles from './home.module.scss'
 
 export default function Home(){
   return (
@@ -7,8 +7,8 @@ export default function Home(){
     <Head>
     <title>Home | ig.news</title>
   </Head>
-    <main>
-      <section>
+    <main className={styles.contentContainer}>
+      <section className={styles.hero}>
         <span>👏🏾 Seja Bem vindo!</span>
         <h1> Notícias sobre o universo <span>React</span></h1>
         <p>
